@@ -1,0 +1,300 @@
+:root {
+            --cor-fundo: #1e1e1f;
+            --cor-texto-principal: #cbd7fb;
+            --cor-texto-escuro: #90aeeffd;
+            --cor-primaria: #4299e1;
+            --cor-primaria-hover: #2b6cb0;
+            --cor-branco: #c3c1c5;
+            --sombra-padrao: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --sombra-grande: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto-principal);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Header e Navegação */
+        .header {
+            background-color: var(--cor-branco);
+            box-shadow: var(--sombra-padrao);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--cor-texto-escuro);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: var(--cor-texto-principal);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--cor-primaria);
+        }
+
+        #mobile-menu-button {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        #mobile-menu {
+            display: none;
+            text-align: center;
+        }
+
+        #mobile-menu a {
+            display: block;
+            padding: 0.75rem 1rem;
+            text-decoration: none;
+            color: var(--cor-texto-principal);
+        }
+        #mobile-menu a:hover {
+            background-color: #edf2f7;
+        }
+
+        /* Seções e Cards */
+        main {
+            padding: 3rem 0;
+        }
+
+        section {
+            margin-bottom: 4rem;
+            scroll-margin-top: 6rem; /* Ajuste para o header fixo */
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--cor-texto-escuro);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .card {
+            background-color: var(--cor-branco);
+            border-radius: 0.5rem;
+            box-shadow: var(--sombra-grande);
+            padding: 1.5rem;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        /* Perfil Pessoal */
+        .perfil-container {
+            display: flex;
+            align-items: center;
+        }
+        .perfil-foto-container {
+            flex: 1;
+            text-align: center;
+            padding-right: 2rem;
+        }
+        .perfil-foto {
+            width: 12rem;
+            height: 12rem;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: var(--sombra-padrao);
+        }
+        .perfil-info {
+            flex: 2;
+        }
+        .perfil-info h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--cor-texto-escuro);
+            margin: 0 0 0.5rem 0;
+        }
+        .perfil-info h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--cor-primaria);
+            margin: 0 0 1rem 0;
+        }
+        .perfil-info p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        .social-links a {
+            color: var(--cor-texto-principal);
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: var(--cor-primaria);
+        }
+
+        /* Currículo */
+        .curriculo-section h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            color: var(--cor-texto-escuro);
+        }
+        .curriculo-section .mb-6 {
+             margin-bottom: 1.5rem;
+        }
+        .curriculo-section ul {
+            list-style-position: inside;
+            padding-left: 0;
+        }
+
+        /* Projetos */
+        .projetos-grid {
+            display: grid;
+            gap: 2rem;
+        }
+        .projeto-card h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--cor-texto-escuro);
+            margin-bottom: 0.5rem;
+        }
+        .projeto-card a {
+            color: var(--cor-primaria);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .projeto-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Habilidades */
+        .habilidades-card {
+            text-align: center;
+        }
+        .btn-habilidades {
+            background-color: var(--cor-primaria);
+            color: var(--cor-branco);
+            font-weight: bold;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .btn-habilidades:hover {
+            background-color: var(--cor-primaria-hover);
+        }
+        .habilidades-listas {
+            margin-top: 2rem;
+            text-align: left;
+        }
+        .habilidades-listas h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .tag {
+            border-radius: 9999px;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        .tag-hard {
+            background-color: #e2e8f0;
+            color: #4a5568;
+        }
+        .tag-soft {
+            background-color: #ebf8ff;
+            color: #2b6cb0;
+        }
+
+        /* Recomendações */
+        .recomendacoes-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .recomendacao-card p:first-child {
+            font-style: italic;
+        }
+        .recomendacao-card .autor {
+            text-align: right;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        .recomendacao-card .cargo {
+            text-align: right;
+            font-size: 0.875rem;
+            color: #718096;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--cor-texto-escuro);
+            color: var(--cor-branco);
+            margin-top: 4rem;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            #mobile-menu-button {
+                display: block;
+            }
+            .perfil-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .perfil-foto-container {
+                padding-right: 0;
+                margin-bottom: 1.5rem;
+            }
+            .social-links {
+                justify-content: center;
+            }
+            .projetos-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .hidden {
+            display: none;
+        }
