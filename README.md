@@ -1,0 +1,75 @@
+[projeto.py](https://github.com/user-attachments/files/22992327/projeto.py)
+# 1. Definição das Funções para os Problemas de Matemática
+
+def problema_soma():
+    """Calcula a soma de dois números fornecidos pelo usuário."""
+    print("\n--- Opção 1: Soma de Dois Números ---")
+
+    try:
+        # Pede os números e converte para float (para aceitar decimais)
+        num1 = float(input("Digite o primeiro número: "))
+        num2 = float(input("Digite o segundo número: "))
+
+        resultado = num1 + num2
+        print(f"\nO resultado da soma é: {resultado}")
+
+    except ValueError:
+        # Trata o erro se o usuário digitar algo que não é um número
+        print("\nErro: Por favor, digite apenas números válidos.")
+
+
+def problema_area_retangulo():
+    """Calcula a área de um retângulo (base * altura)."""
+    print("\n--- Opção 2: Área do Retângulo ---")
+
+    try:
+        base = float(input("Digite o valor da base: "))
+        altura = float(input("Digite o valor da altura: "))
+
+        area = base * altura
+        print(f"\nA área do retângulo é: {area}")
+
+    except ValueError:
+        print("\nErro: Por favor, digite apenas números válidos.")
+
+
+# 2. Definição da Função de Exibição do Menu
+
+def exibir_menu():
+    """Exibe as opções do menu no terminal."""
+    print("\n" + "=" * 40)
+    print("      MENU DE PROBLEMAS DE MATEMÁTICA")
+    print("=" * 40)
+    print("1. Soma de Dois Números")
+    print("2. Calcular Área do Retângulo (Base x Altura)")
+    print("3. Sair do Programa")
+    print("-" * 40)
+
+
+# 3. Lógica Principal do Programa (O Loop Interativo)
+
+def main():
+    while True:
+        exibir_menu()
+
+        # Captura a escolha do usuário
+        escolha = input("Escolha uma opção (1, 2 ou 3): ").strip()
+
+        if escolha == '1':
+            problema_soma()
+
+        elif escolha == '2':
+            problema_area_retangulo()
+
+        elif escolha == '3':
+            print("\nObrigado por usar o programa! Até logo.")
+            break  # Comando para sair do loop 'while True'
+
+        else:
+            print(f"\nOpção '{escolha}' inválida. Por favor, escolha 1, 2 ou 3.")
+
+
+# 4. Início da Execução do Programa
+if __name__ == "__main__":
+    main()
+
