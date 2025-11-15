@@ -1,3 +1,12 @@
-**Conecte-se Comigo:**
+👩‍💻 Olá, eu sou Natalia
 
-* **LinkedIn:** [Meu Perfil Profissional](www.linkedin.com/in/natalia-nóbrega-37a780205)
+Formada em **Biologia** e atualmente em transição para a área de **Tecnologia da Informação**.  
+Apaixonada por aprendizado contínuo e em busca de crescimento profissional através de novos desafios e projetos.
+
+---
+
+## 📌 Sobre mim
+- 🎓 Graduada em Biologia  
+- 💻 Migrando para a área de TI  
+- 🌱 Sempre em busca de novos conhecimentos  
+- 🚀 Interesse em desenvolvimento e tecnologia aplicada  
